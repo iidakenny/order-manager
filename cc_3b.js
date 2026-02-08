@@ -33,3 +33,28 @@ inventory.forEach(item => {
     console.log(`SKU-${item.SKU} | ${item.name} | $${item.price} | ${item.stock}`)
 });
 
+console.log("\n")
+// Added a new procuduct to inventory
+
+inventory.push({
+    SKU: "F890769",
+    name: "USB-C Charger",
+    price: 29.99,
+    stock: 38
+})
+
+// Removed the last item from inventory and displayed in console. 
+
+removedItem = inventory.pop();
+console.log("Removed Item: ", removedItem);
+
+console.log("\n")
+
+inventory.forEach(item => {
+    console.log(`SKU-${item.SKU} | ${item.name} | $${item.price} | ${item.stock}`)
+});
+
+// Creating a sales dicount variable for a 15% discount
+var salesDiscount = 0.15;
+
+
